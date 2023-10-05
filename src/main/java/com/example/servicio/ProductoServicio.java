@@ -14,6 +14,6 @@ public interface ProductoServicio {
 
 	
 	List<Producto> listaProductos();
-	List<Producto> actualizarStock(Producto producto);
+	void actualizarStock(Producto producto);
 	int precioProducto(int codigoProducto);
 }

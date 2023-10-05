@@ -16,9 +16,9 @@ public class ProductoServicioImpl implements ProductoServicio {
     }
 
     @Override
-    public List<Producto> actualizarStock(Producto producto) {
+    public void actualizarStock(Producto producto) {
         dao.save(producto);
-        return dao.findAll();
+        
     }
 
     @Override
